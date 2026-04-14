@@ -1,0 +1,649 @@
+/* =========================================
+   Certifications & Achievements Section
+   Premium Styling - Glassmorphism & Modern UI
+   ========================================= */
+
+/* --- Main Layout & Container --- */
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-color-headings);
+    /* Replaced gradient with variable */
+    text-shadow: 0 0.4vh 1.2vh rgba(0, 0, 0, 0.1);
+    font-family: var(--font-family-secondary);
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: var(--text-color-light);
+    /* Variable */
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 300;
+    font-family: var(--font-family-primary);
+}
+
+/* --- Controls / Filter Bar --- */
+.controls {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem;
+    padding: 1.5rem;
+    background: rgba(var(--card-bg-rgb), 0.3);
+    border-radius: 1rem;
+    backdrop-filter: blur(0.5rem);
+    border: 0.1rem solid rgba(var(--primary-color-rgb), 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex: 1;
+}
+
+.search-container {
+    position: relative;
+    flex: 1;
+    min-width: 280px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-color-light);
+    /* Variable */
+    pointer-events: none;
+}
+
+#cert-search {
+    width: 100%;
+    padding: 0.8rem 1rem 0.8rem 2.8rem;
+    background: var(--glass-effect);
+    /* Variable */
+    border: 1px solid var(--input-border);
+    /* Variable */
+    border-radius: var(--border-radius-soft);
+    /* Variable */
+    color: var(--text-color);
+    /* Variable */
+    font-size: 0.95rem;
+    font-family: var(--font-family-primary);
+    /* Variable */
+    transition: all var(--anim-speed-normal) ease;
+    /* Variable */
+}
+
+#cert-search:focus {
+    outline: none;
+    border-color: var(--input-focus-border);
+    /* Variable */
+    box-shadow: var(--input-focus-shadow);
+    /* Variable */
+}
+
+.filter-container select,
+.sort-container select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 0.8rem 2.5rem 0.8rem 1rem;
+    /* Constructing the SVG part is tricky with vars, kept static or could use url encoded var if supported (not standard CSS). 
+       Keeping the SVG but using variables for background color part */
+    background: var(--glass-effect) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23888888' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E") no-repeat calc(100% - 1rem) center;
+    border: 1px solid var(--input-border);
+    /* Variable */
+    border-radius: var(--border-radius-soft);
+    /* Variable */
+    color: var(--text-color);
+    /* Variable */
+    font-size: 0.95rem;
+    font-family: var(--font-family-primary);
+    /* Variable */
+    cursor: pointer;
+    min-width: 180px;
+    transition: all var(--anim-speed-normal) ease;
+    /* Variable */
+}
+
+.filter-container select:hover,
+.sort-container select:hover {
+    border-color: var(--primary-color);
+    /* Variable */
+}
+
+.filter-container select:focus,
+.sort-container select:focus {
+    outline: none;
+    border-color: var(--input-focus-border);
+    /* Variable */
+    box-shadow: var(--input-focus-shadow);
+    /* Variable */
+}
+
+.reset-btn {
+    padding: 0.8rem 1.2rem;
+    background: var(--button-bg);
+    /* Variable */
+    border: 1px solid var(--button-border);
+    /* Variable */
+    border-radius: var(--border-radius-soft);
+    /* Variable */
+    color: var(--button-text-color);
+    /* Variable */
+    cursor: pointer;
+    transition: all var(--anim-speed-normal) ease;
+    /* Variable */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-family-secondary);
+    /* Variable */
+}
+
+.reset-btn:hover {
+    background: var(--button-hover-bg);
+    /* Variable */
+    color: var(--button-hover-text-color);
+    /* Variable */
+    box-shadow: var(--button-glow);
+    /* Variable */
+}
+
+.results-info {
+    font-size: 0.9rem;
+    color: var(--text-color-light);
+    /* Variable */
+    font-style: italic;
+    min-width: 100px;
+    text-align: right;
+    font-family: var(--font-family-primary);
+    /* Variable */
+}
+
+/* --- Certificates Grid --- */
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    width: 80%;
+    margin: 0 auto;   /* centers it horizontally */
+}
+
+
+.no-results-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-color-light);
+    /* Variable */
+    font-size: 1.2rem;
+    background: var(--card-bg);
+    /* Variable */
+    border-radius: var(--border-radius-soft);
+    /* Variable */
+    border: 1px solid var(--card-border);
+    /* Variable */
+}
+
+/* --- Certificate Card --- */
+.cert-card {
+    background: var(--card-bg);
+    /* Variable */
+    border: 1px solid var(--card-border);
+    /* Variable */
+    backdrop-filter: var(--glass-effect);
+    /* Variable */
+    -webkit-backdrop-filter: var(--glass-effect);
+    border-radius: var(--border-radius-soft);
+    /* Variable */
+    padding: 1.5rem;
+    position: relative;
+    transition: all var(--anim-speed-normal) var(--transition-sharp);
+    /* Variable */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.cert-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cert-card:hover {
+    transform: translateY(-0.8vh);
+    box-shadow: var(--legendary-shadow);
+    /* Variable */
+    border-color: var(--primary-color);
+    /* Variable */
+    /* background: var(--lsearch-card-bg);  Optional: change bg on hover */
+}
+
+.cert-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--border-radius-soft);
+    /* Variable */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    background: linear-gradient(135deg, rgba(var(--primary-color-rgb), 0.1), rgba(var(--secondary-color-rgb), 0.05));
+    /* Variables */
+    border: 1px solid var(--card-border);
+    /* Variable */
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    /* Variable */
+    box-shadow: 0 0.4vh 1vh rgba(0, 0, 0, 0.1);
+    transition: transform var(--anim-speed-normal) ease;
+    /* Variable */
+}
+
+.cert-card:hover .cert-icon-wrapper {
+    transform: scale(1.1) rotate(5deg);
+    border-color: var(--secondary-color);
+    /* Variable */
+    color: var(--secondary-color);
+    /* Variable */
+}
+
+/* Dynamic Colors re-mapped to variables where possible or kept as useful utils */
+.fa-database {
+    color: var(--neon-blue) !important;
+}
+
+.fa-chart-line {
+    color: var(--neon-green) !important;
+}
+
+.fa-heartbeat {
+    color: var(--neon-pink) !important;
+}
+
+.fa-graduation-cap {
+    color: var(--accent-color-alt) !important;
+}
+
+.fa-code {
+    color: var(--neon-purple) !important;
+}
+
+.fa-briefcase {
+    color: var(--neon-orange) !important;
+}
+
+.cert-info h4 {
+    color: var(--text-color-headings);
+    /* Variable */
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    min-height: 2.8em;
+    font-family: var(--font-family-secondary);
+    /* Variable */
+}
+
+.cert-info .org {
+    font-size: 0.85rem;
+    color: var(--text-color-light);
+    /* Variable */
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-family: var(--font-family-primary);
+    /* Variable */
+}
+
+.cert-info .date {
+    font-size: 0.8rem;
+    color: var(--text-color-darker);
+    /* Variable */
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-family-primary);
+    /* Variable */
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    border-radius: var(--border-radius-sharp);
+    /* Variable */
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    background: rgba(var(--primary-color-rgb), 0.1);
+    color: var(--primary-color);
+    border: 1px solid rgba(var(--primary-color-rgb), 0.2);
+    font-family: var(--font-family-secondary);
+    /* Variable */
+}
+
+.cert-actions {
+    margin-top: auto;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--card-border);
+    /* Variable */
+}
+
+.cert-actions .view-btn {
+    width: 100%;
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 0.6rem;
+    border-radius: var(--border-radius-soft);
+    /* Variable */
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all var(--anim-speed-normal) ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: var(--font-family-secondary);
+    /* Variable */
+}
+
+.cert-actions .view-btn:hover {
+    background: rgba(var(--primary-color-rgb), 0.1);
+    box-shadow: var(--button-glow);
+    transform: translateY(-0.2vh);
+}
+
+/* --- Lightbox --- */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    /* Keep dark overlay or use var if appropriate */
+    backdrop-filter: var(--backdrop-blur);
+    /* Variable */
+    -webkit-backdrop-filter: var(--backdrop-blur);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--anim-speed-normal) ease;
+    /* Variable */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-content {
+    background: var(--modal-bg);
+    /* Variable */
+    border: 1px solid var(--modal-border);
+    /* Variable */
+    box-shadow: var(--modal-shadow);
+    /* Variable */
+    border-radius: var(--border-radius-soft);
+    /* Variable */
+    width: 100%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    animation: slideUp 0.4s ease forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+    /* Variable */
+    cursor: pointer;
+    transition: color var(--anim-speed-fast);
+    /* Variable */
+    z-index: 10;
+}
+
+.close-btn:hover {
+    color: var(--primary-color);
+    /* Variable */
+    transform: rotate(90deg);
+}
+
+.lightbox-header {
+    padding: 2rem 2rem 1rem 2rem;
+    border-bottom: 1px solid var(--card-border);
+    /* Variable */
+}
+
+.lightbox-header h3 {
+    font-size: 1.8rem;
+    color: var(--text-color-headings);
+    /* Variable */
+    margin-bottom: 0.5rem;
+    padding-right: 2rem;
+    font-family: var(--font-family-secondary);
+    /* Variable */
+}
+
+.lb-meta {
+    color: var(--secondary-color);
+    /* Variable */
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--font-family-primary);
+    /* Variable */
+}
+
+.lightbox-body {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.certificate-preview-container {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius-soft);
+    /* Variable */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    border: 1px dashed var(--card-border);
+    /* Variable */
+}
+
+.pdf-placeholder {
+    text-align: center;
+    color: var(--text-color-light);
+    /* Variable */
+}
+
+.pdf-placeholder i {
+    color: var(--secondary-color);
+    /* Variable */
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 10px rgba(var(--secondary-color-rgb), 0.3));
+}
+
+.preview-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary-color);
+    /* Variable */
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-bottom: 1px solid transparent;
+    transition: border var(--anim-speed-fast);
+    /* Variable */
+    font-family: var(--font-family-primary);
+    /* Variable */
+}
+
+.preview-link:hover {
+    border-bottom-color: var(--primary-color);
+}
+
+.certificate-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.detail-row {
+    font-size: 1rem;
+    color: var(--text-color);
+    /* Variable */
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--card-border);
+    /* Variable */
+    font-family: var(--font-family-primary);
+    /* Variable */
+}
+
+.detail-row strong {
+    color: var(--text-color-light);
+    /* Variable */
+    margin-right: 0.5rem;
+    font-weight: 500;
+}
+
+.tag {
+    display: inline-block;
+    background: rgba(var(--secondary-color-rgb), 0.1);
+    color: var(--secondary-color);
+    /* Variable */
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--border-radius-sharp);
+    /* Variable */
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-family-secondary);
+    /* Variable */
+}
+
+.lb-buttons {
+    margin-top: auto;
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.lb-button {
+    flex: 1;
+    padding: 0.8rem;
+    border-radius: var(--border-radius-soft);
+    /* Variable */
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--anim-speed-normal) ease;
+    /* Variable */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: var(--font-family-secondary);
+    /* Variable */
+}
+
+.primary-btn {
+    background: var(--button-bg);
+    /* Variable */
+    color: var(--button-text-color);
+    /* Variable */
+    border: 1px solid var(--button-border);
+    /* Variable */
+}
+
+.primary-btn:hover {
+    background: var(--button-hover-bg);
+    /* Variable */
+    color: var(--button-hover-text-color);
+    /* Variable */
+    box-shadow: var(--button-glow);
+    /* Variable */
+}
+
+.secondary-btn {
+    background: transparent;
+    border: 1px solid var(--card-border);
+    /* Variable */
+    color: var(--text-color);
+    /* Variable */
+}
+
+.secondary-btn:hover {
+    background: rgba(var(--primary-color-rgb), 0.1);
+    border-color: var(--primary-color);
+    /* Variable */
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .lightbox-body {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-row {
+        flex-direction: column;
+    }
+
+    .search-container,
+    .filter-container select,
+    .sort-container select {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .lightbox-header h3 {
+        font-size: 1.5rem;
+    }
+}

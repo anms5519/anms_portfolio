@@ -1,0 +1,193 @@
+2D_Animation_GP_Academy.pdf
+A2Z_Finance_Beginner_Course.pdf
+ACLS_Provider_Card.pdf
+Advanced Microsoft Excel.pdf
+Advanced SQL.pdf
+Agile_Transformation_Udemy.pdf
+AI Ethics.pdf
+AI Model deployment on AWS.pdf
+AI+ FoundationT.pdf
+Android_App_Dev_BDSkills.pdf
+AWS_Generative_AI_Amazon_Bedrock.pdf
+Bloodborne_Pathogens_Course.pdf
+BLS_Provider_Card.pdf
+Build Conversational AI Memory with LangGraph.pdf
+Building a 3-Statement Model in Excel.pdf
+Building Business Reports Using Power BI.pdf
+Canva_Magic_Studio_Course.pdf
+CC-055211B341 - Math Foundation for ML.pdf
+CC-0AC0C07EE4 - Intro to NLP for AI.pdf
+CC-0AE0646AB5 - Data Analysis with Excel Pivot Tables.pdf
+CC-0B2F161B1D - Machine Learning with Naive Bayes.pdf
+CC-0C826BB57C - Deep Learning with Pytorch.pdf
+CC-0F32B005E2 - A-B Testing in Python.pdf
+CC-1513181FE9 - The Complete Data Visualization Course.pdf
+CC-1A5AA7C6B8 - Deep Learning with TensorFlow 2.pdf
+CC-1A8D732F88 - Intro to Data Engineering.pdf
+CC-1E659916E6 - Discounted Cash Flow Valuation.pdf
+CC-2342975CF0 - Machine Learning with Decision Trees and Random Forests.pdf
+CC-2910A5B4BF - Working with Text Files in Python.pdf
+CC-3407ECBCA7 - Machine Learning with Support Vector Machines.pdf
+CC-38453454B1 - The Machine Learning Process A-Z.pdf
+CC-4344CEF184 - Alternative Investments.pdf
+CC-45657D66BC - Accounting and Financial Statement Analysis.pdf
+CC-46226F4B32 - Fundamentals of Financial Markets.pdf
+CC-4709D34AEE - Data Cleaning and Preprocessing with pandas.pdf
+CC-56393A85E3 - Build Chat Applications with OpenAI and LangChain.pdf
+CC-564599601C - Data Ingestion with Pandas.pdf
+CC-5680FFA0D1 - FPA - Building a Companys Budget.pdf
+CC-598831A7ED - Intro to Microsoft Azure.pdf
+CC-61990B7751 - Statistics.pdf
+CC-729402C498 - Introduction to Tableau.pdf
+CC-7487652C37 - Advanced Financial Reporting - Long-term Liabilities.pdf
+CC-7716A1FAB2 - Fashion Analytics with Tableau.pdf
+CC-9029B2622A - Portfolio Management.pdf
+CC-9077F082A2 - Introduction to LLaMA.pdf
+CC-93925B55CD - Introduction to Data Architecture.pdf
+CC-9454A0015C - Fundamentals of Equity Valuation.pdf
+CC-9611810044 - Building Data Pipelines with Apache Airflow.pdf
+CC-9644B7ACDB - Corporate Finance.pdf
+CC-A179974B43 - Python 102 - Beginners Power-Up.pdf
+CC-A18CD64E0E - AI Applications for Business Success.pdf
+CC-A1BC4585CB - Introduction to Databricks.pdf
+CC-A2284BF286 - Advanced SQL for Data Engineering.pdf
+CC-A3C14C45D9 - Intro to Revenue Analytics.pdf
+CC-A46BC1413F - Growth Analysis with SQL Python and Tableau.pdf
+CC-A5392352EB - Advanced Financial Reporting - Inventory.pdf
+CC-A5A6CD5DC6 - Customer Engagement Analysis with SQL and Tableau.pdf
+CC-A5FDDE7DCF - Product Management for AI and Data Science.pdf
+CC-A73300DB81 - Machine Learning with K-Nearest Neighbors.pdf
+CC-A8FCAD0C06 - Introduction to Equity Securities.pdf
+CC-A9557924FA - Sign-Up Flow Optimization Analysis.pdf
+CC-AA9FA24F97 - Credit Risk Modeling in Python.pdf
+CC-AD0C0DCEAE - Introduction to Jupyter.pdf
+CC-ADB069D3F8 - Introducing Algorithms in Python.pdf
+CC-AFDDEB632E - Intro to AI Agents and Agentic AI.pdf
+CC-AFF684C0EB - Communication and Presentation Skills.pdf
+CC-B062573D07 - Power BI.pdf
+ChatGPT at Work - Ethical and Secure ChatGPT Use.pdf
+ChatGPT for Data Science.pdf
+ChatGPT for SQL Beginners.pdf
+ChatGPT_Prompt_Engineering.pdf
+CHAT_Community_Engagement_UNICEF.pdf
+Convolutional Neural Networks with TensorFlow in Python.pdf
+CPR_AED_First_Aid_Card.pdf
+CPR_AED_First_Aid_Course.pdf
+Customer Analytics in Python.pdf
+Customer Churn Analysis with SQL and Tableau.pdf
+Customer_Service_Dev_BDSkills.pdf
+Cybersecurity_Analyst_Simulation_Tata.pdf
+Cyber_Hygiene_Training_Asia_Foundation.pdf
+Data Analysis in PowerBI with ChatGPT.pdf
+Data Analysis with ChatGPT.pdf
+Data Literacy.pdf
+Data Preprocessing with NumPy.pdf
+Data Strategy.pdf
+Data-Driven Business Growth.pdf
+Data_Visualisation_Tata.pdf
+Dates and Times in Python.pdf
+Derivatives.pdf
+DevOps_For_Beginners.pdf
+Digital_Financial_Mastery_bKash.pdf
+Digital_Marketing_Strategist_Udemy.pdf
+Econometrics I.pdf
+English Skills for Academic and Corporate Success.pdf
+English_Proficiency_EF_SET_C1_Advanced.pdf
+Evaluating AI Agents - From Metrics to Real-World Impact.pdf
+filenames.txt
+Financial Ratio Analysis.pdf
+Fixed Income Investments.pdf
+Flutter_Course_Interactive_Cares.pdf
+Fully Automated MLOps.pdf
+Full_Stack_MERN_GP_Academy.pdf
+Fundamentals of Financial Reporting.pdf
+Git and GitHub.pdf
+HackerRank_CSS_Basic_Certificate.pdf
+HHP_Mobile_Hardware_Software.pdf
+How to Think Like a Data Scientist to Become One.pdf
+HSC_Certificate_2020.pdf
+Innovate2Educate_Handheld_Device_Design_Challenge.pdf
+Intermediate Python Programming.pdf
+Intermediate Revenue Analytics.pdf
+Intro to AI.pdf
+Intro to ChatGPT and Generative AI.pdf
+Intro to Google Cloud.pdf
+Intro to LLMs.pdf
+Intro to PowerPoint.pdf
+Intro to Shell.pdf
+Introduction to AWS Cloud.pdf
+Introduction to Business Analytics.pdf
+Introduction to Data and Data Science.pdf
+Introduction to Data Warehousing.pdf
+Introduction to DAX.pdf
+Introduction to Excel.pdf
+Introduction to Hugging Face.pdf
+Introduction to Industry and Company Analysis.pdf
+Introduction to Management Accounting.pdf
+Introduction to Python.pdf
+Introduction to R Programming.pdf
+Introduction to Vector Databases with Pinecone.pdf
+Investment Banking.pdf
+Islamic_Science_Enrollment_Zad.pdf
+JavaScript_Crash_Course.pdf
+JSC_Certificate_2015.pdf
+LBO Modeling in Excel.pdf
+Linear Algebra and Feature Selection.pdf
+LLM Engineering in Practice with Streamlit and OpenAI.pdf
+Machine Learning Deep Dive - Business Applications and Coding Walkthroughs.pdf
+Machine Learning in Excel.pdf
+Machine Learning in Python.pdf
+Machine Learning with Ridge and Lasso Regression.pdf
+Macroeconomics.pdf
+Mastering Key Performance Indicators (KPIs).pdf
+Math for Finance.pdf
+Mathematics.pdf
+MCPs for Everyone - Supercharge Your AI Tooling Skills.pdf
+Microsoft_Excel_Coursera.pdf
+Microsoft_Generative_AI_Concepts.pdf
+Mobile_Game_Dev_ICT_Division.pdf
+Multiples Valuation.pdf
+National song with 1,00,000 people.pdf
+National_Science_Fair_2017_Participation.pdf
+PALS_Provider_Card.pdf
+PHP_Laravel_Dev_BDSkills.pdf
+Power BI Data Visualization Hero.pdf
+Power Query and Data Modeling.pdf
+Probability.pdf
+Professional_Back_Office_BDSkills.pdf
+Professional_C_Programming_Workshop_2023.pdf
+PSC_Certificate_2012.pdf
+Python 101 - Kickoff.pdf
+Python Coding Interview Prep.pdf
+Python for Finance.pdf
+Python for Social Media Analytics.pdf
+Python Programmer Bootcamp.pdf
+Python_3_Programming_Workshop_2023.pdf
+Python_Game_Dev_Udemy.pdf
+Railbus_Membership_Certificate.pdf
+SaveaLife_ACLS_Certification_2025.pdf
+SaveaLife_BLS_Certification_2025.pdf
+SaveaLife_PALS_Certification_2025.pdf
+Speech Recognition with Python.pdf
+SQL + Tableau.pdf
+SQL and Tableau and Python.pdf
+SQL for Data Science Interviews.pdf
+SQL.pdf
+SSC_Certificate_2018.pdf
+Starting a Career in Data Science - Project Portfolio Resume and Interview Process.pdf
+Statistical Tests in Sales and Marketing.pdf
+Step into the world of Web Development.pdf
+TATA_Crucible_Campus_Quiz_2025.pdf
+Technical Analysis.pdf
+The Machine Learning Algorithms A-Z.pdf
+The_SDG_Primer_UNDP.pdf
+Time Series Analysis with Python.pdf
+UI UX Free Course.pdf
+UIUX_Design_FutureNation.pdf
+Understanding Cloud Computing.pdf
+UNICEF_MICS_eLearning.pdf
+Web Scraping and API Fundamentals in Python.pdf
+Web_Design_NSDA_Level_3.pdf
+Who Does What in Finance.pdf
+WordPress_Website_Coursera.pdf
+Workplace_Communication_UNICEF.pdf
